@@ -53,7 +53,7 @@ Create a `.env` file or set environment variables:
 TRANSCRIBER_TYPE=openai
 
 # OpenAI Whisper model size
-OPENAI_MODEL_SIZE=base
+OPENAI_MODEL_SIZE=medium
 
 # Audio settings
 SAMPLE_RATE=16000
@@ -71,9 +71,9 @@ SHOW_AUDIO_DEVICES=false
 ### Available OpenAI Whisper Models
 
 - `tiny` - Fastest, basic accuracy (~39 MB)
-- `base` - Good balance of speed/accuracy (~74 MB) **[Default]**
+- `base` - Good balance of speed/accuracy (~74 MB)
 - `small` - Better accuracy (~244 MB)
-- `medium` - High accuracy (~769 MB)
+- `medium` - High accuracy (~769 MB) **[Default]**
 - `large` - Best accuracy (~1550 MB)
 
 ## Usage Examples
@@ -196,7 +196,7 @@ If using non-default audio device, check system audio settings.
 - **Python 3.9+**
 - **Working microphone**
 - **Internet connection** (for initial model download)
-- **Disk space:** 74MB (base) to 1.5GB (large model)
+- **Disk space:** 769MB (medium default) to 1.5GB (large model)
 - **Optional:** GPU for faster processing (automatically detected)
 
 ## Dependencies
