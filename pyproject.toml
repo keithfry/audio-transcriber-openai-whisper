@@ -1,0 +1,18 @@
+[project]
+name = "audio-transcriber"
+version = "0.1.0"
+description = "Real-time audio transcription using Hugging Face Whisper"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "transformers>=4.35.0",
+    "torch>=2.0.0",
+    "torchaudio>=2.0.0",
+    "sounddevice>=0.4.6",
+    "numpy>=1.24.0",
+    "librosa>=0.10.0",
+    "datasets>=2.14.0",
+    "webrtcvad>=2.0.10",
+    "soundfile>=0.12.1",
+    "openai-whisper>=20231117",
+]
